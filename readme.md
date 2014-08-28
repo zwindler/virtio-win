@@ -14,7 +14,7 @@ See also
 Building instructions
 
       cd /tmp
-      wget http://alt.fedoraproject.org/pub/alt/virtio-win/latest/images/virtio-win-0.1-81.iso
+      wget http://alt.fedoraproject.org/pub/alt/virtio-win/latest/images/virtio-win-0.1-81.iso -O virtio-win.iso
 
       rpmbuild -bp virtio-win.spec
       rpmbuild -bc --short-circuit virtio-win.spec
