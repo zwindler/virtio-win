@@ -22,21 +22,21 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/virtio-win/drivers/amd64
 mkdir -p %{buildroot}/usr/share/virtio-win/drivers/i386
 cp -r %{_builddir}/%{name}-%{version}/wxp/x86 %{buildroot}/usr/share/virtio-win/drivers/amd64/Win2003
-cp -r %{_builddir}/%{name}-%{version}/xp/amd64 %{buildroot}/usr/share/virtio-win/drivers/amd64/Win2003
+cp %{_builddir}/%{name}-%{version}/xp/amd64/* %{buildroot}/usr/share/virtio-win/drivers/amd64/Win2003
 cp -r %{_builddir}/%{name}-%{version}/win7/amd64 %{buildroot}/usr/share/virtio-win/drivers/amd64/Win2008
 cp -r %{_builddir}/%{name}-%{version}/win8/amd64 %{buildroot}/usr/share/virtio-win/drivers/amd64/Win2012
 cp -r %{_builddir}/%{name}-%{version}/win7/amd64 %{buildroot}/usr/share/virtio-win/drivers/amd64/Win7
 cp -r %{_builddir}/%{name}-%{version}/win8/amd64 %{buildroot}/usr/share/virtio-win/drivers/amd64/Win8
 cp -r %{_builddir}/%{name}-%{version}/wxp/x86 %{buildroot}/usr/share/virtio-win/drivers/amd64/Winxp
-cp -r %{_builddir}/%{name}-%{version}/xp/amd64 %{buildroot}/usr/share/virtio-win/drivers/amd64/Winxp
+cp %{_builddir}/%{name}-%{version}/xp/amd64/* %{buildroot}/usr/share/virtio-win/drivers/amd64/Winxp
 cp -r %{_builddir}/%{name}-%{version}/wxp/x86 %{buildroot}/usr/share/virtio-win/drivers/i386/Win2003
-cp -r %{_builddir}/%{name}-%{version}/xp/x86 %{buildroot}/usr/share/virtio-win/drivers/i386/Win2003
+cp %{_builddir}/%{name}-%{version}/xp/x86/* %{buildroot}/usr/share/virtio-win/drivers/i386/Win2003
 cp -r %{_builddir}/%{name}-%{version}/win7/x86 %{buildroot}/usr/share/virtio-win/drivers/i386/Win2008
 cp -r %{_builddir}/%{name}-%{version}/win8/x86 %{buildroot}/usr/share/virtio-win/drivers/i386/Win2012
 cp -r %{_builddir}/%{name}-%{version}/win7/x86 %{buildroot}/usr/share/virtio-win/drivers/i386/Win7
 cp -r %{_builddir}/%{name}-%{version}/win8/x86 %{buildroot}/usr/share/virtio-win/drivers/i386/Win8
 cp -r %{_builddir}/%{name}-%{version}/wxp/x86 %{buildroot}/usr/share/virtio-win/drivers/i386/Winxp
-cp -r %{_builddir}/%{name}-%{version}/xp/x86 %{buildroot}/usr/share/virtio-win/drivers/i386/Winxp
+cp %{_builddir}/%{name}-%{version}/xp/x86/* %{buildroot}/usr/share/virtio-win/drivers/i386/Winxp
 
 %clean
 rm -rf %{buildroot}
